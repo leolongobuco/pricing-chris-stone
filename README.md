@@ -118,7 +118,7 @@ Para visualizar a aplicação conectada ao banco realize a instalação do docke
   }
 ```
 
-- 6 Busque um cliente pelo e-mail:
+- 6º Busque um cliente pelo e-mail:
 
 ```JSON
   {
@@ -127,14 +127,14 @@ Para visualizar a aplicação conectada ao banco realize a instalação do docke
 
 ```
 
-- 7 Busque um produto pelo id:
+- 7º Busque um produto pelo id:
 
 ```bash
     http://localhost:3000/product/c56939aa-6b85-41f8-a0aa-8f072eba7c24
 
 ```
 
-- 8 Crie um novo vendedor:
+- 8º Crie um novo vendedor:
 
 ```JSON
     {
