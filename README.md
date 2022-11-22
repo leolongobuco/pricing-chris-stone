@@ -1,4 +1,4 @@
-# NLW Copa
+# Pricing Chris - challenge Stone
 
 # Sobre o projeto
 
