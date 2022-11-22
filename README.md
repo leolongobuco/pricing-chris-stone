@@ -137,10 +137,10 @@ Para visualizar a aplicação conectada ao banco realize a instalação do docke
 - 8º Crie um novo vendedor:
 
 ```JSON
-    {
+  {
     "sellerName": "John Doe",
     "sellerTypeLevel": "SR"
-}
+  }
 ```
 
 # Autor
