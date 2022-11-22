@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Customers {
+  id               String @id @default(uuid())
+  customerEmail    String @unique
+  customerSegment  String
+  customerLocation String
+  soldVolume       Float
+
+  @@map("customer")
+}
+
+model Products {
+  id             String           @id @default(uuid())
+  productName    String
+  typeProduct    String
+  ProfitAndLoses ProfitAndLoses[]
+
+  @@map("product")
+}
+
+model ProfitAndLoses {
+  id           String   @id @default(uuid())
+  revenue      Float
+  costs        Float
+  brazilianTax Float
+  netProfit    Float
+  productId    Products @relation(fields: [productID], references: [id])
+  productID    String
+
+  @@map("profitAndLose")
+}
+
+model Sellers {
+  id              String @id @default(uuid())
+  sellerName      String
+  sellerTypeLevel String
+
+  @@map("seller")
+}
