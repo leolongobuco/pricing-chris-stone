@@ -164,4 +164,3 @@ Leonardo Longobuco
       target="_blank"
   /></a>
 </div>
-```
