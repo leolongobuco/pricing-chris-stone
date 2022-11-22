@@ -14,8 +14,6 @@ class FindSpecificProductByIdUseCase {
   async execute(productID: string): Promise<Product> {
     const product = await this.productsRepository.findById(productID);
 
-    console.log(productID);
-
     if (!product) throw new AppError("Produto não encontrado");
 
     return product;

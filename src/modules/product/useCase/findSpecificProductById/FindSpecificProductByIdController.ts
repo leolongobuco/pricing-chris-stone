@@ -7,8 +7,6 @@ class FindSpecificProductByIdController {
   async handle(request: Request, response: Response) {
     const { productID } = request.params;
 
-    console.log(productID);
-
     const findSpecificProductByIdUseCase = container.resolve(
       FindSpecificProductByIdUseCase
     );
