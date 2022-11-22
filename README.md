@@ -61,9 +61,9 @@ Toda a regra de negócio da API está validada com testes unitários de cada use
 
 ![Testes da Aplicação](https://github.com/leolongobuco/pricing-chris-stone/blob/main/github_assets/testes-app.png)
 
-## Testes com DB (WEB)
+## Testes com DB
 
-Para visualizar a aplicação conectada ao banco realiza a instalação do docker através do passo a passo anterior e baixe essa collection do postman para tornar o processo mais rápido:
+Para visualizar a aplicação conectada ao banco realize a instalação do docker através do passo a passo anterior e baixe essa collection do postman para tornar o processo mais rápido:
 [Collection Pricing Chris](https://www.getpostman.com/collections/2dbe3a478c9e1327bccb "Collection da Aplicação")
 
 - 1º Comece criando um Customer:
