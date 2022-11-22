@@ -37,7 +37,7 @@ Product e Profit And Loses se relacionam pois só existe um PnL se também exist
 # clone o repositório
 git clone https://github.com/leolongobuco/pricing-chris-stone
 
-# entrar na pasta do projeto backend
+# entrar na pasta do projeto
 cd pricing-chris-stone
 cd pricing-chris
 
@@ -118,7 +118,41 @@ Para visualizar a aplicação conectada ao banco realize a instalação do docke
   }
 ```
 
-- 6º Busque um cliente pelo e-mail:
+- 6º Simule uma negociação com uma campanha por estado:
+
+```JSON
+  {
+     "customerLocation": "91920150",
+     "customerSegment": "Tech", // Restaurants | Education | Health | Tech | Clothing | Real State | Personal Services | Entertainment
+     "sellerTypeLevel": "JR",
+     "soldVolume": 120,
+     "priceAsked": 400,
+     "existCampaign": true,
+     "campaingPerState": {
+      "existCampaign": true,
+      "campaign": "SUL#15",
+    },
+  }
+```
+
+- 7º Simule uma negociação com uma campanha por volume de vendas do cliente para o brasil todo:
+
+```JSON
+  {
+    "customerLocation": "91920150",
+    "customerSegment": "Tech", // Restaurants | Education | Health | Tech | Clothing | Real State | Personal Services | Entertainment
+    "sellerTypeLevel": "JR",
+    "soldVolume": 120,
+    "priceAsked": 400,
+    "existCampaign": true,
+    "campaignPerSoldVolume": {
+      "existCampaign": true,
+      "campaign": "BRA#20",
+    },
+  }
+```
+
+- 8º Busque um cliente pelo e-mail:
 
 ```JSON
   {
@@ -127,14 +161,14 @@ Para visualizar a aplicação conectada ao banco realize a instalação do docke
 
 ```
 
-- 7º Busque um produto pelo id:
+- 9º Busque um produto pelo id:
 
 ```bash
     http://localhost:3000/product/c56939aa-6b85-41f8-a0aa-8f072eba7c24
 
 ```
 
-- 8º Crie um novo vendedor:
+- 10º Crie um novo vendedor:
 
 ```JSON
   {
